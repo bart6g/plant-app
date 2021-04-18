@@ -10,29 +10,60 @@ const Navbar = ({ setPage }) => {
     <NavContainer>
       <NavWrapper>
         <Logo>
-          <NavLink to="/" exact onClick={() => setPage(0)}>
+          <NavLink
+            to="/"
+            exact
+            onClick={() => {
+              setPage(0);
+              setIsOpen(false);
+            }}
+          >
             <img src={logoImg} alt="logo" />
           </NavLink>
         </Logo>
 
         <NavLinks isOpen={isOpen}>
           <li>
-            <NavLink to="/katalog" onClick={() => setPage(1)}>
+            <NavLink
+              to="/katalog"
+              onClick={() => {
+                setPage(1);
+                setIsOpen(false);
+              }}
+            >
               Rośliny filtrujące
             </NavLink>
           </li>
           <li>
-            <NavLink to="/kalkulator" onClick={() => setPage(2)}>
+            <NavLink
+              to="/kalkulator"
+              onClick={() => {
+                setPage(2);
+                setIsOpen(false);
+              }}
+            >
               Kalkulator filtracji
             </NavLink>
           </li>
           <li>
-            <NavLink to="/sklep" onClick={() => setPage(3)}>
+            <NavLink
+              to="/sklep"
+              onClick={() => {
+                setPage(3);
+                setIsOpen(false);
+              }}
+            >
               Sklep
             </NavLink>
           </li>
           <li>
-            <NavLink to="/kontakt" onClick={() => setPage(4)}>
+            <NavLink
+              to="/kontakt"
+              onClick={() => {
+                setPage(4);
+                setIsOpen(false);
+              }}
+            >
               Kontakt
             </NavLink>
           </li>

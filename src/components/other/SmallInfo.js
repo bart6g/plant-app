@@ -32,12 +32,12 @@ const Button = styled.button`
   border: 1px solid #262624;
   background: transparent;
   color: #262624;
-  margin-top: 50px;
+  margin: 50px 0;
 `;
 
 const SmallInfo = () => {
   return (
-    <div>
+    <div style={{ marginRight: "40px" }}>
       <Row>
         <BiWind />
         <p>Oczyszczanie powietrza</p>

@@ -14,6 +14,7 @@ import {
 import { NavLink } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import SmallInfo from "../other/SmallInfo";
+
 const PlantPage = ({ page }) => {
   let { id } = useParams();
 

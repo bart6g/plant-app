@@ -14,6 +14,12 @@ const Box = styled.div`
   box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
   transition: all 0.3s ease;
   cursor: pointer;
+
+  div {
+    display: flex;
+    padding: 20px 0;
+    align-items: center;
+  }
   &:hover {
     opacity: 0.9;
     transform: translateY(-15px);
@@ -24,7 +30,8 @@ const Box = styled.div`
     width: 100%;
   }
   p {
-    padding: 20px 0;
+    margin-right: 10px;
+    /* padding: 20px 0; */
   }
 `;
 

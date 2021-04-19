@@ -3,7 +3,8 @@ import { BsDropletFill } from "react-icons/bs";
 import { BiWind } from "react-icons/bi";
 import { FaSun } from "react-icons/fa";
 import styled from "styled-components";
-
+import { useHistory } from "react-router-dom";
+const Rows = styled.div``;
 const Row = styled.div`
   display: flex;
   align-items: center;
@@ -16,6 +17,18 @@ const Row = styled.div`
   p {
     margin: 0 20px;
   }
+
+  @media screen and (max-width: 500px) {
+    svg {
+      font-size: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+    span {
+      display: none;
+    }
+  }
 `;
 
 const Square = styled.div`
@@ -24,6 +37,11 @@ const Square = styled.div`
   background-color: ${({ empty }) => (empty ? "transparent" : "#262624")};
   border: ${({ empty }) => (empty ? "1px solid #262624" : "none")};
   margin-right: 5px;
+
+  @media screen and (max-width: 500px) {
+    width: 13px;
+    height: 13px;
+  }
 `;
 
 const Button = styled.button`
@@ -33,35 +51,56 @@ const Button = styled.button`
   background: transparent;
   color: #262624;
   margin: 50px 0;
+  cursor: pointer;
+  @media screen and (max-width: 500px) {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+`;
+
+const Container = styled.div`
+  margin-right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 const SmallInfo = () => {
+  let history = useHistory();
   return (
-    <div style={{ marginRight: "40px" }}>
-      <Row>
-        <BiWind />
-        <p>Oczyszczanie powietrza</p>
-        <Square />
-        <Square />
-        <Square />
-      </Row>
-      <Row>
-        <FaSun />
-        <p>Nasłonecznienie</p>
-        <Square />
-        <Square />
-        <Square empty={true} />
-      </Row>
-      <Row>
-        <BsDropletFill />
-        <p>Podlewanie</p>
-        <Square />
-        <Square />
-        <Square empty={true} />
-      </Row>
-
-      <Button>Przejdź do kalkulatora</Button>
-    </div>
+    <Container>
+      <Rows>
+        <Row>
+          <BiWind />
+          <p>
+            Oczyszczanie <span>powietrza</span>
+          </p>
+          <Square />
+          <Square />
+          <Square />
+        </Row>
+        <Row>
+          <FaSun />
+          <p>Nasłonecznienie</p>
+          <Square />
+          <Square />
+          <Square empty={true} />
+        </Row>
+        <Row>
+          <BsDropletFill />
+          <p>Podlewanie</p>
+          <Square />
+          <Square />
+          <Square empty={true} />
+        </Row>
+      </Rows>
+      <Button onClick={() => history.push("/kalkulator")}>
+        Przejdź do kalkulatora
+      </Button>
+    </Container>
   );
 };
 

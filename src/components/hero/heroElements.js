@@ -16,6 +16,10 @@ export const HeroContainer = styled.div`
   background-position: bottom;
   background-size: cover;
   animation: ${onLoad} 2s;
+
+  @media screen and (max-width: 768px) {
+    height: 100vh;
+  }
 `;
 
 export const HeroBg = styled.div`

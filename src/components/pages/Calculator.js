@@ -8,6 +8,8 @@ import {
 } from "./pageElements";
 import { NavLink } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
+import CalculatorForm from "../other/CalculatorForm";
+
 const Calculator = ({ page }) => {
   return (
     <div>
@@ -35,6 +37,7 @@ const Calculator = ({ page }) => {
           oczyszczone.
         </PageSubtitle>
       </TitleWrapper>
+      <CalculatorForm />
     </div>
   );
 };

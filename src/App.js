@@ -8,10 +8,12 @@ import Calculator from "./components/pages/Calculator";
 import Shop from "./components/pages/Shop";
 import Contact from "./components/pages/Contact";
 import PlantPage from "./components/pages/PlantPage";
+import ScrollToTop from "./components/other/ScrollToTop";
 const App = () => {
   const [page, setPage] = useState(0);
   return (
     <Router>
+      <ScrollToTop />
       <Navbar setPage={setPage} />
 
       <Switch>
@@ -33,7 +35,10 @@ const App = () => {
           component={() => <Calculator page={page} />}
         />
 
-        <Route path="/sklep" component={() => <Shop page={page} />} />
+        <Route
+          path="/sklep"
+          component={() => <Shop page={page} setPage={setPage} />}
+        />
 
         <Route path="/kontakt" component={() => <Contact page={page} />} />
       </Switch>

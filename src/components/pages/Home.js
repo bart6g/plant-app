@@ -10,8 +10,10 @@ import {
 import img1 from "../../images/skrzydlo.png";
 import img2 from "../../images/chem.png";
 import Hero from "../hero/Hero";
+import { useHistory } from "react-router-dom";
 
 const Home = ({ page }) => {
+  let history = useHistory();
   return (
     <>
       <Hero page={page} />
@@ -46,7 +48,7 @@ const Home = ({ page }) => {
           </ImgWrap>
         </ContentWrap>
         <ContentWrap>
-          <HomeButton>
+          <HomeButton onClick={() => history.push("/katalog")}>
             Sprawdź jakie rośliny są odpowiednie dla Twojego wnętrza
           </HomeButton>
         </ContentWrap>

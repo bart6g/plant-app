@@ -83,7 +83,7 @@ export const NavLinks = styled.ul`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    font-size: 20px;
+    font-size: 16px;
     transform: ${({ isOpen }) =>
       isOpen ? "translateY(0)" : "translateY(-100%)"};
   }

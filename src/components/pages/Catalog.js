@@ -54,7 +54,7 @@ const Catalog = ({ page, setPage }) => {
           {catalogData.map((plant) => (
             <PlantBox key={plant.title} setPage={setPage} title={plant.title}>
               <img src={plant.img} alt="" />
-              <p>{plant.title}</p>
+              <div>{plant.title}</div>
             </PlantBox>
           ))}
         </CatalogWrapper>

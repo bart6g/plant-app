@@ -169,4 +169,10 @@ export const PlantImg = styled.div`
       max-width: 300px;
     }
   }
+
+  @media screen and (max-width: 500px) {
+    img {
+      max-width: 250px;
+    }
+  }
 `;

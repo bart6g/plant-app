@@ -1,6 +1,12 @@
 import React from "react";
 import Hero from "../hero/Hero";
-import { Container, PageTitle, TitleWrapper, PageLinks } from "./pageElements";
+import {
+  Container,
+  PageTitle,
+  TitleWrapper,
+  PageLinks,
+  PageSubtitle,
+} from "./pageElements";
 import { IoIosArrowBack } from "react-icons/io";
 import { NavLink } from "react-router-dom";
 import ContactInfo from "../other/ContactInfo";
@@ -21,6 +27,10 @@ const Contact = ({ page }) => {
           </div>
         </PageLinks>
         <PageTitle>Kontakt </PageTitle>
+        <PageSubtitle>
+          Page was designed by Anna Bobek & written by Bartosz Gałuszka (using
+          React).
+        </PageSubtitle>
       </TitleWrapper>
       <Container>
         <ContactInfo />

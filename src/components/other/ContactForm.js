@@ -1,5 +1,5 @@
 import React from "react";
-import { Form } from "./formElements";
+import { Button, Form } from "./formElements";
 
 const ContactForm = () => {
   return (
@@ -19,6 +19,8 @@ const ContactForm = () => {
         <textarea required></textarea>
         <span className="placeholder">Twoja wiadomość</span>
       </label>
+
+      <Button>Wyślij</Button>
     </Form>
   );
 };

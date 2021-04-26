@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/flo/static/css/main.0be0f4a1.chunk.css",
+    "main.js": "/flo/static/js/main.5ca8a13d.chunk.js",
+    "main.js.map": "/flo/static/js/main.5ca8a13d.chunk.js.map",
+    "runtime-main.js": "/flo/static/js/runtime-main.10e0609c.js",
+    "runtime-main.js.map": "/flo/static/js/runtime-main.10e0609c.js.map",
+    "static/js/2.3106f6bf.chunk.js": "/flo/static/js/2.3106f6bf.chunk.js",
+    "static/js/2.3106f6bf.chunk.js.map": "/flo/static/js/2.3106f6bf.chunk.js.map",
+    "static/js/3.3c4c05ba.chunk.js": "/flo/static/js/3.3c4c05ba.chunk.js",
+    "static/js/3.3c4c05ba.chunk.js.map": "/flo/static/js/3.3c4c05ba.chunk.js.map",
+    "index.html": "/flo/index.html",
+    "static/css/main.0be0f4a1.chunk.css.map": "/flo/static/css/main.0be0f4a1.chunk.css.map",
+    "static/js/2.3106f6bf.chunk.js.LICENSE.txt": "/flo/static/js/2.3106f6bf.chunk.js.LICENSE.txt",
+    "static/media/bg.041b6cc1.png": "/flo/static/media/bg.041b6cc1.png",
+    "static/media/blusz.a6b68188.png": "/flo/static/media/blusz.a6b68188.png",
+    "static/media/chem.1da1a985.png": "/flo/static/media/chem.1da1a985.png",
+    "static/media/epi.d720056a.png": "/flo/static/media/epi.d720056a.png",
+    "static/media/sanseweria.ecea8548.png": "/flo/static/media/sanseweria.ecea8548.png",
+    "static/media/skrzydlo.1163b9f4.png": "/flo/static/media/skrzydlo.1163b9f4.png",
+    "static/media/zam.c4e215d0.png": "/flo/static/media/zam.c4e215d0.png",
+    "static/media/ziel.eb7b5b95.png": "/flo/static/media/ziel.eb7b5b95.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.10e0609c.js",
+    "static/js/2.3106f6bf.chunk.js",
+    "static/css/main.0be0f4a1.chunk.css",
+    "static/js/main.5ca8a13d.chunk.js"
+  ]
+}
